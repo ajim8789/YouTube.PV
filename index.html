@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Preview Tool</title>
+
+<!-- CSS Link -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="toggle-btn" onclick="toggleTheme()">🌗 Theme</div>
+
+<div class="container">
+
+    <h1>YouTube Preview Video</h1>
+    <p>Paste or drop a YouTube link to preview and play it.</p>
+
+    <!-- INPUT -->
+    <div class="input-box">
+        <input type="text" id="videoUrl" placeholder="Enter YouTube URL">
+        <button onclick="loadPreview()">Load</button>
+    </div>
+
+    <!-- DRAG & DROP -->
+    <div id="dropZone">Drag & Drop YouTube Link Here</div>
+
+    <!-- LOADING -->
+    <div id="loading">
+        <div class="spinner"></div>
+        Loading video info...
+    </div>
+
+    <!-- PREVIEW -->
+    <div id="preview" class="preview hidden">
+        <iframe id="player" allowfullscreen></iframe>
+    </div>
+
+</div>
+<!-- JS Link -->
+<script src="script.js"></script>
+</body>
+</html>
